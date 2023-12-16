@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+section::before{
+    content: "";
+    background-image: url("./garage/bike-img/volkan-olmez-SvMlXH_eW6o-unsplash.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: -1;
+}
+
+/* yha se navigation ka positioning set ho rha hai */
+nav {
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(54, 51, 51);
+    height: 5vh;
+}
+
+nav a img {
+    display: block;
+    margin: auto;
+    height: 8vh;
+    width: 6vw;
+}
+
+nav img {
+    padding-top: 3%;
+    width: 150px;
+}
+
+#logo-info {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: large;
+    color: black;
+    
+}
+.left{
+    width:fit-content;
+    /* height: 4.8vh; */
+    background-color: rgb(49, 47, 44);
+    border-radius: 15px;
+}
+.left a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: larger;
+}
+.left a h4{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+.middle {
+    flex: 1;
+    /* mtlb menu items grow and shrink krega as per the screen handling i.e. increasing nd decreasing screen size */
+    text-align: center;
+    padding-left: 8%;
+    display: block;
+    position: sticky;
+    width: 60%;
+    margin: auto;
+}
+
+
+.middle ul li {
+    list-style: none;
+    display: inline-block;
+    /* saara content ek line me aa jaana ahi */
+    padding: 8px 12px;
+    position: relative;
+    margin: auto;
+
+}
+
+.middle ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* ::after matlab jo pehle se navbar yha set hai, usme baad me upar
+se kya add on hona hai */
+.middle ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rebeccapurple;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.middle ul li:hover::after {
+    width: 100%;
+}
+
+li input {
+    float: left;
+    padding: 5px 5px;
+    border-radius: 15px;
+    border: none;
+}
+
+.right {
+    width: 25%;
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+}
+
+.btn {
+    margin: 20px 20px;
+    color: white;
+    background-color: black;
+    padding: 5px 5px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer; 
+    width: fit-content;
+}
+
+.content-portion{
+    /* background-image: url(./garage/bike-img/soroush-golpoor-kXw6ngvtf_k-unsplash.jpg); */
+    height: 50vh;
+    width: 40vw;
+    border: 5px solid white;
+    color: white;
+    margin: 50px;
+    position: absolute; 
+    /* text-align: center; */
+}
+.highlight{
+    font-weight: 700;
+    font-size:xx-large;
+    margin-top: 25px;
+    color: #b5b0aad9;
+}
+.home{
+    color: aqua;
+}
+    
